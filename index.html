@@ -16,13 +16,24 @@
     <title>Victory Design Co.</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <a href="#" class="logo">Victory Design Co.</a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li><a class="main-nav-link" href="#specialties">Specialties</a></li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
             <h1 class="heading-primary">
-              Custom handmade calligraphy and art signage
+              Custom handmade calligraphy, art and signage
             </h1>
             <p class="hero-description">
               Serving events, personal requests and dozens of local businesses
@@ -35,14 +46,21 @@
             <a href="#how" class="btn btn--outline">Learn more &darr;</a>
           </div>
           <div class="hero-img-box">
-            <img src="#" class="hero-img" alt="Victory Design Co Logo" />
+            <picture>
+              <!-- source tags may be needed as backups in future -->
+              <img
+                src="/img/hero-main-logo.png"
+                class="hero-img"
+                alt="Victory Design Co Logo"
+              />
+            </picture>
           </div>
         </div>
       </section>
 
       <section class="section-featured">
         <div class="container">
-          <h2 class="heading-featured-in">Work featured in</h2>
+          <h2 class="heading-featured-in">Work featured at</h2>
           <div class="logos">
             <img src="img/logos/mrtuna.png" alt="Mr. Tuna logo" />
             <img src="img/logos/crispygai.png" alt="Crispy Gai logo" />
@@ -51,6 +69,36 @@
               alt="The Lanes Bowl & Bistro logo"
             />
             <img src="/img/logos/somerset.png" alt="Somerset creamery logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-services" id="services">
+        <div class="container center-text">
+          <span class="subheading">Specialties</span>
+          <h2 class="heading-secondary">
+            My most common request fall into three catagories
+          </h2>
+        </div>
+
+        <div class="container grid gird--2-cols grid--center-v">
+          <!-- STEP 01-->
+          <div class="service-text-box">
+            <h3 class="heading-tertiary">Signage & Wall Art</h3>
+            <p class="service-description">
+              Hand Drawn Signs and Murals for your business or home (Menus,
+              Logos, Decor Ect). Signs can be done on almost any surface (Wood,
+              Glass, Chalkboards Ect). Generally you will provide the surface,
+              and I will do the desgins/lettering on whatever surface you
+              provide. Exceptions can be made where I will aquire the surface
+              for you. I also will do the art right on your wall. Whether you
+              need to highlight an area of your business, or you want to add
+              something to your home.
+            </p>
+          </div>
+
+          <div class="service-img-box">
+            <img src="img/logos/crispygai.png" class="service-img" alt="" />
           </div>
         </div>
       </section>
