@@ -165,3 +165,21 @@
   background-color: #e1d9f7;
   z-index: -1;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item div {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background-color: rebeccapurple;
+}
