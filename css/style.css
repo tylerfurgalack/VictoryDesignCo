@@ -117,9 +117,37 @@
 }
 
 /**************************/
+/* ABOUT SECTION */
+/**************************/
+
+.about-heading {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.about-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.about-img {
+  height: 40rem;
+  width: 40rem;
+  background-color: #6741d9;
+}
+
+/**************************/
 /* SERVICES SECTION */
 /**************************/
 
+.section-services {
+  margin-bottom: 8rem;
+}
 .section-how {
   padding: 9.6rem 0;
 }
@@ -133,6 +161,7 @@
   position: relative;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -182,4 +211,67 @@
   width: 10rem;
   height: 10rem;
   background-color: rebeccapurple;
+}
+
+/**************************/
+/* PRICING SECTION */
+/**************************/
+
+.section-pricing {
+  background-color: #f0ecfb;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.pricing {
+  height: 40rem;
+  width: 20rem;
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+/**************************/
+/* CONTACT SECTION */
+/**************************/
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+.contact-heading {
+  font-weight: 700;
+  color: #fff;
+
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.contact-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  background-color: #6741d9;
+  color: #fff;
+}
+
+.contact-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.contact-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(31, 19, 65, 0.35),
+      rgba(29, 15, 66, 0.35)
+    ),
+    url('../img/hero-main-logo.png');
+  background-size: cover;
+  background-position: center;
 }
