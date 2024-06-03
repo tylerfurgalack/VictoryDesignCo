@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/queries.css" /> -->
 
     <script
       type="module"
@@ -21,21 +22,27 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/script.js" defer></script>
 
     <title>Victory Design Co.</title>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Victory Design Co.</a>
+      <a href="#" class="logo">VICTORY DESIGN CO.</a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#about">About</a></li>
-          <li><a class="main-nav-link" href="#specialties">Specialties</a></li>
+          <li><a class="main-nav-link" href="#services">Services</a></li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
+          <li><a class="main-nav-link nav-cta" href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -48,11 +55,11 @@
               Serving events, personal requests and dozens of local businesses
               all over New England
             </p>
-            <a href="#cta" class="btn btn--full margin-right-sm"
+            <a href="#contact" class="btn btn--full margin-right-sm"
               >Request a Quote</a
             >
 
-            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#services" class="btn btn--outline">Learn more &darr;</a>
           </div>
           <div class="hero-img-box">
             <picture>
@@ -105,7 +112,7 @@
 
       <section class="section-services" id="services">
         <div class="container">
-          <span class="subheading">Specialties</span>
+          <span class="subheading">Services</span>
           <h2 class="heading-secondary">
             My most common request fall into three catagories
           </h2>
@@ -119,9 +126,10 @@
             <h3 class="heading-tertiary">Signage & Wall Art</h3>
             <p class="service-description">
               Hand Drawn Signs and Murals for your business or home (Menus,
-              Logos, Decor Ect). I also will do the art right on your wall.
-              Whether you need to highlight an area of your business, or you
-              want to add something to your home, I can help you with that.
+              Logos, Decor Ect). Signs can be done on almost any surface (Wood,
+              Glass, Chalkboards Ect). I also will do the art right on your
+              wall. Whether you need to highlight an area of your business, or
+              you want to add something to your home, I can help you with that.
             </p>
           </div>
 
@@ -173,7 +181,8 @@
             <p class="service-description">
               Looking for Wedding or Event Signage Pieces? I am happy to help
               with that! I can do seating charts, welcome signs, menu/bar signs,
-              and more. I can also do custom pieces for your event.
+              and more. I can also do custom pieces for your event. Signs can be
+              done on almost any surface (Wood, Glass, Chalkboards Ect).
             </p>
           </div>
 
@@ -339,7 +348,12 @@
                 SURFACE & WORDING. Any relevant images are also welcome and
                 helpful.
               </p>
-              <button class="btn btn--email">Email Me!</button>
+              <a
+                class="btn btn--email"
+                href="mailto:victorydesignco93@gmail.com"
+              >
+                Email Me!
+              </a>
             </div>
 
             <div
@@ -353,30 +367,34 @@
     </main>
 
     <footer class="footer">
-      <div class="container center-text">
+      <div class="container">
         <div class="logo-col">
           <a href="#" class="footer-logo">Victoria<br />Design<br />Co.</a>
-
-          <ul class="social-links">
-            <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-                <p>Instagram</p></a
-              >
-            </li>
-            <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="mail"></ion-icon>
-                <p>victorydesignco93@gmail.com</p></a
-              >
-            </li>
-          </ul>
-
           <p class="copyright">
             Copyright &copy; <span class="year">2024</span> by Victory Design
             Co. All rights reserved.
           </p>
         </div>
+      </div>
+      <div class="container">
+        <p class="footer-heading">Contact Info</p>
+        <ul class="social-links">
+          <li>
+            <a
+              class="footer-link"
+              href="https://www.instagram.com/victory.design.co/"
+              target="_blank"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+              <p>Instagram</p></a
+            >
+          </li>
+          <li>
+            <a class="footer-link" href="mailto:victorydesignco93@gmail.com"
+              ><ion-icon class="social-icon" name="mail"></ion-icon>
+              <p>victorydesignco93@gmail.com</p></a
+            >
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
