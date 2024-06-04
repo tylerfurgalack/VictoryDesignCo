@@ -65,7 +65,7 @@
 /* MOBILE */
 .btn-mobile-nav {
   border: none;
-  background: none;
+  background-color: none;
   cursor: pointer;
 
   display: none;
@@ -160,6 +160,10 @@
 /**************************/
 /* ABOUT SECTION */
 /**************************/
+
+.section-about {
+  padding: 4.8rem 0 3.2rem 0;
+}
 
 .about-heading {
   font-weight: 700;

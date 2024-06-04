@@ -72,6 +72,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /**************************/
@@ -203,10 +204,10 @@ body {
   color: #555;
 }
 
-/* .link:link,
+.link:link,
 .link:visited {
   display: inline-block;
-  color: #e67e22;
+  color: #2b8a3e;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -215,9 +216,14 @@ body {
 
 .link:hover,
 .link:active {
-  color: #cf711f;
+  color: #277c38;
   border-bottom: 1px solid transparent;
-} */
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(43, 138, 62, 051);
+}
 
 /* HELPER/SETTINGS CLASSES */
 .margin-right-sm {
