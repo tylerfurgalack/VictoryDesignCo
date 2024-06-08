@@ -79,6 +79,14 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /**************************/
 
+/* section::before {
+  content: '';
+  display: block;
+  height: 9.6rem; 
+  margin-top: -9.6rem; 
+
+  visibility: hidden;
+} */
 .container {
   max-width: 120rem;
   padding: 0 3.2rem;
@@ -222,7 +230,7 @@ body {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgb(43, 138, 62, 051);
+  box-shadow: 0 0 0 0.4rem rgb(43, 138, 62, 051);
 }
 
 /* HELPER/SETTINGS CLASSES */

@@ -49,16 +49,16 @@
   color: #226e32;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
+.main-nav-link.nav-contact:link,
+.main-nav-link.nav-contact:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
   background-color: #2b8a3e;
 }
 
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
+.main-nav-link.nav-contact:hover,
+.main-nav-link.nav-contact:active {
   background-color: #226e32;
 }
 
@@ -177,13 +177,18 @@
 .about-description {
   font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3.2rem;
+  font-weight: 500;
+}
+
+.about-social-icon {
+  color: #2b8a3e;
+  height: 3.2rem;
+  width: 3.2rem;
 }
 
 .about-img {
-  height: 40rem;
-  width: 40rem;
-  background-color: #2b8a3e;
+  width: 100%;
 }
 
 /**************************/
@@ -191,15 +196,14 @@
 /**************************/
 
 .section-services {
-  margin-bottom: 8rem;
-}
-.section-how {
   padding: 9.6rem 0;
+  margin-bottom: 8rem;
 }
 
 .service-description {
   font-size: 1.8rem;
   line-height: 1.8;
+  font-weight: 500;
 }
 
 .service-text-box {
@@ -265,6 +269,7 @@
 .section-pricing {
   background-color: #eaf3ec;
   padding: 4.8rem 0 9.6rem 0;
+  margin-bottom: 4.4rem;
 }
 
 .pricing {
