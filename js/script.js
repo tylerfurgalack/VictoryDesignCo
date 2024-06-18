@@ -40,50 +40,24 @@ const obs = new IntersectionObserver(
 
 obs.observe(sectionHeroEl);
 
-// ///////////////////////////////////////////////////////////
-// // Smooth scrolling animation
+///////////////////////////////////////////////////////////
+// image slider
 
-// const allLinks = document.querySelectorAll('a:link');
+const modal = document.getElementById('img-modal');
 
-// allLinks.forEach(function (link) {
-//   link.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const href = link.getAttribute('href');
+const stepImg = document.getElementsByClassName('step-img');
 
-//     // Scroll back to top
-//     if (href === '#')
-//       window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth',
-//       });
+const span = document.getElementsByClassName('close')[0];
 
-//     // Scroll to other links
-//     if (href !== '#' && href.startsWith('#')) {
-//       const sectionEl = document.querySelector(href);
-//       sectionEl.scrollIntoView({ behavior: 'smooth' });
-//     }
+// When the user clicks on an image, open the modal
 
-//     // Close mobile naviagtion
-//     if (link.classList.contains('main-nav-link'))
-//       headerEl.classList.toggle('nav-open');
-//   });
-// });
+for (let i = 0; i < stepImg.length; i++) {
+  stepImg[i].onclick = function () {
+    modal.style.display = 'block';
+  };
+}
 
-// ///////////////////////////////////////////////////////////
-// // Fixing flexbox gap property missing in some Safari versions
-// function checkFlexGap() {
-//   var flex = document.createElement('div');
-//   flex.style.display = 'flex';
-//   flex.style.flexDirection = 'column';
-//   flex.style.rowGap = '1px';
-
-//   flex.appendChild(document.createElement('div'));
-//   flex.appendChild(document.createElement('div'));
-
-//   document.body.appendChild(flex);
-//   var isSupported = flex.scrollHeight === 1;
-//   flex.parentNode.removeChild(flex);
-
-//   if (!isSupported) document.body.classList.add('no-flexbox-gap');
-// }
-// checkFlexGap();
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = 'none';
+};
