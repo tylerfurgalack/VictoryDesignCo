@@ -47,7 +47,7 @@ const modal = document.getElementById('img-modal');
 
 const stepImg = document.getElementsByClassName('step-img');
 
-const span = document.getElementsByClassName('close')[0];
+const x = document.getElementsByClassName('close')[0];
 
 // When the user clicks on an image, open the modal
 
@@ -57,7 +57,7 @@ for (let i = 0; i < stepImg.length; i++) {
   };
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+// When the user clicks on (x), close the modal
+x.onclick = function () {
   modal.style.display = 'none';
 };

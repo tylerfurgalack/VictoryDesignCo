@@ -163,7 +163,7 @@
 /**************************/
 
 .section-about {
-  padding: 4.8rem 0 3.2rem 0;
+  padding: 9.6rem 0;
 }
 
 .about-heading {
@@ -199,7 +199,6 @@
 
 .section-services {
   padding: 9.6rem 0;
-  margin-bottom: 8rem;
 }
 
 .service-description {
@@ -255,6 +254,10 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 9px;
 }
+#step-img-box--2 {
+  height: 90%;
+  width: 80%;
+}
 
 .step-img {
   justify-content: center;
@@ -286,6 +289,7 @@
   padding: 3.2rem;
 }
 .close {
+  margin: 0.8rem;
   color: #2b8a3e;
   display: flex;
   justify-content: center;
@@ -301,6 +305,7 @@
 .close:hover,
 .close:focus {
   color: #226e32;
+  transition: all 0.4s;
   background-color: #d5e8d8;
   text-decoration: none;
   cursor: pointer;
@@ -360,8 +365,7 @@
 
 .section-pricing {
   background-color: #eaf3ec;
-  padding: 4.8rem 0 9.6rem 0;
-  margin-bottom: 4.4rem;
+  padding: 9.6rem 0;
 }
 
 .pricing {
@@ -399,7 +403,7 @@
 .price-attribute {
   font-size: 1.8rem;
   display: flex;
-
+  line-height: 1.2;
   align-items: center;
   gap: 1.6rem;
 }
@@ -432,6 +436,9 @@
 /**************************/
 /* CONTACT SECTION */
 /**************************/
+.section-contact {
+  padding: 9.6rem 0;
+}
 
 .contact {
   display: grid;
