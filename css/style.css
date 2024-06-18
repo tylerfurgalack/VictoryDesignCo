@@ -126,6 +126,7 @@
 
 .hero-img {
   width: 100%;
+  border-radius: 9px;
 }
 
 /**************************/
@@ -189,6 +190,7 @@
 
 .about-img {
   width: 100%;
+  border-radius: 9px;
 }
 
 /**************************/
@@ -245,11 +247,13 @@
 }
 
 .step-img-box {
-  width: 80%;
+  width: 100%;
   display: flex;
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 9px;
 }
 
 .step-img {
@@ -280,20 +284,24 @@
 
 .slider-container {
   padding: 3.2rem;
-  margin-top: 5%;
 }
 .close {
-  color: #fff;
-  float: right;
+  color: #2b8a3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.2rem;
+  width: 5.2rem;
   font-size: 3.6rem;
-  padding: 1.6rem;
-  background-color: #6f6f6f;
-  border-radius: 9px;
+
+  background-color: rgb(255, 255, 255, 0.9);
+  border-radius: 50%;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #226e32;
+  background-color: #d5e8d8;
   text-decoration: none;
   cursor: pointer;
 }
@@ -310,7 +318,7 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 9px;
 }
@@ -332,8 +340,8 @@
 }
 
 .slider-nav a {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1rem;
+  height: 1rem;
   border-width: 1px;
   border-radius: 50%;
   border: #333;
