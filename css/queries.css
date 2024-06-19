@@ -155,6 +155,11 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .nav-insta {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
 }
 
 /**************************/
