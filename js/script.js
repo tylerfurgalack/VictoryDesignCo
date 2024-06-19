@@ -49,15 +49,28 @@ const stepImg = document.getElementsByClassName('step-img');
 
 const x = document.getElementsByClassName('close')[0];
 
+const galleryBtn = document.getElementsByClassName('gallery-btn')[0];
+
 // When the user clicks on an image, open the modal
 
 for (let i = 0; i < stepImg.length; i++) {
   stepImg[i].onclick = function () {
     modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
   };
 }
+
+// When the user clicks on the button, open the modal
+galleryBtn.onclick = function () {
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+  document.documentElement.style.overflow = 'hidden';
+};
 
 // When the user clicks on (x), close the modal
 x.onclick = function () {
   modal.style.display = 'none';
+  document.body.style.overflow = '';
+  document.documentElement.style.overflow = '';
 };

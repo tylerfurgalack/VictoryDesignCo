@@ -191,6 +191,7 @@
 .about-img {
   width: 100%;
   border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 /**************************/
@@ -251,7 +252,8 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
   border-radius: 9px;
 }
 #step-img-box--2 {
@@ -272,6 +274,23 @@
   cursor: pointer;
 }
 
+.gallery-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.gallery-btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #2b8a3e;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
 /* Modal & Carousel */
 
 .modal {
@@ -285,11 +304,8 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.slider-container {
-  padding: 3.2rem;
-}
 .close {
-  margin: 0.8rem;
+  margin: 3.2rem 0 0 3.2rem;
   color: #2b8a3e;
   display: flex;
   justify-content: center;
@@ -311,6 +327,11 @@
   cursor: pointer;
 }
 
+.slider-container {
+  padding: 3.2rem;
+  margin-top: 3%;
+}
+
 .slider-wrapper {
   position: relative;
   max-width: 96rem;
@@ -324,14 +345,13 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 9px;
 }
 
 .slider img {
+  width: 100%;
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .slider-nav {
@@ -391,6 +411,7 @@
 
 .murals {
   margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
 }
 
 .price-attributes {
